@@ -3,7 +3,251 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/fav-icon.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- daisy -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              montserrat: "Montserrat",
+            },
+          },
+        },
+      };
+    </script>
+
     <title>Web Data Scraping</title>
   </head>
-  <body></body>
+  <body class="w-11/12 mx-auto font-montserrat">
+    <header class="container mx-auto py-10">
+      <!-- nav-bar starts  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>Company</a>
+                <ul class="p-2">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Infrastructure</a></li>
+                  <li><a href="#">Faq</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Services</a>
+                <ul class="p-2">
+                  <li><a href="#">Web Crawling</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                  <li><a href="#">cCommerce Data Scraping</a></li>
+                  <li><a href="#">Python Web Scraping</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="btn btn-ghost text-lg md:text-xl">
+              <img src="./assets/spider.png" class="w-8 h-8" alt="" />
+              <div class="hidden md:flex">
+                <h1 class="text-lg md:text-2xl font-extrabold">Web Scraping</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li>
+              <details>
+                <summary>Company</summary>
+                <ul class="p-2">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Infrastructure</a></li>
+                  <li><a href="#">Faq</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Services</summary>
+                <ul class="p-2">
+                  <li><a href="#">Web Crawling</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                  <li><a href="#">cCommerce Data Scraping</a></li>
+                  <li><a href="#">Python Web Scraping</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button>
+            <a class="p-3 rounded-l-full bg-blue-500 text-white">Get A Quote</a>
+          </button>
+        </div>
+      </div>
+      <!-- banner-->
+      <section
+        class="w-11/12 mx-auto flex-col md:flex-row flex items-center gap-5 py-10"
+      >
+        <div class="md:w-6/12 flex flex-col gap-6">
+          <h1 class="text-4xl font-extrabold">
+            Experience Web <br />Scraping at Scale
+          </h1>
+          <p>
+            Since its founding in 2009, iWeb Scraping has been among the
+            top-notch providers of web scraping services. Web extraction
+            services have proven to add value and innovation to businesses. We
+            help companies gain a competitive edge by overcoming data
+            challenges.
+          </p>
+          <button class="w-36 h-8 btn btn-outline btn-primary">
+            Learn More
+          </button>
+        </div>
+
+        <div class="">
+          <img
+            src="./assets/banner.png "
+            class="bg-blue-200 bg-opacity-20"
+            alt=""
+          />
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <!-- ou services -->
+      <section class="w-11/12 mx-auto py-10">
+        <div class="flex flex-col items-center gap-5 justify-center">
+          <div class="flex items-center gap-4">
+            <hr class="w-20 h-2 bg-blue-500" />
+            <h1 class="text-4xl font-bold">
+              Our <span class="text-blue-500">Services</span>
+            </h1>
+          </div>
+          <p class="text-xl">Know More about Web Scraping Services We Offer</p>
+
+          <div class="grid md:grid-cols-3 gap-5">
+            <!-- card1 -->
+            <div
+              class="rounded-lg shadow-md bg-blue-100 p-5 bg-opacity-50 space-y-3"
+            >
+              <img
+                src="./assets/website-data-scraping-services.png"
+                class="mx-auto"
+                alt=""
+              />
+              <h1 class="text-2xl text-blue-600 font-bold uppercase">
+                Web Scraping Services
+              </h1>
+              <p class="leading-8">
+                You will require Web Scraping Services to extract valuable data
+                from multiple websites expertly. Collecting relevant data from
+                websites is complex and requires skilled experts and advanced
+                technology.
+              </p>
+            </div>
+
+            <!-- card2 -->
+            <div
+              class="rounded-lg shadow-md bg-blue-100 p-5 bg-opacity-50 space-y-3"
+            >
+              <img
+                src="./assets/web-scraping-API-70x70.png"
+                class="mx-auto"
+                alt=""
+              />
+              <h1 class="text-2xl text-blue-600 font-bold uppercase">
+                Web Scraping Api
+              </h1>
+              <p class="leading-8">
+                Data Collection Services extract data from web pages and fetch
+                information in seconds. With our web scraping API, we integrate
+                data seamlessly into internal workflows and applications.
+              </p>
+            </div>
+
+            <!-- card3  -->
+            <div
+              class="rounded-lg shadow-md bg-blue-100 p-5 bg-opacity-50 space-y-3"
+            >
+              <img src="./assets/mobile-scraping.png" class="mx-auto" alt="" />
+              <h1 class="text-2xl text-blue-600 font-bold uppercase">
+                Mobile App scraping
+              </h1>
+              <p class="leading-8">
+                A mobile app is powerful software precisely made to work on
+                mobile devices like tablets and smartphones. These mobile apps
+                provide desktop-level convenience with seamless service
+                integration.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ou services -->
+
+      <!--  -->
+    </main>
+
+    <footer></footer>
+    <script src="./index.js"></script>
+  </body>
 </html>

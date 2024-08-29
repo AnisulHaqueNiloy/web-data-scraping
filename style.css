@@ -1,0 +1,8 @@
+.drop {
+  display: none;
+  position: absolute;
+}
+
+ul li:hover .drop {
+  display: block;
+}

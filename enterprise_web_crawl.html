@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/fav-icon.png" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- daisy -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy -->
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              montserrat: "Montserrat",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Web Data Scraping Service</title>
+  </head>
+  <body class="font-montserrat">
+    <header class="w-10/12 mx-auto py-10">
+      <!-- nav-bar starts  -->
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li><a>Home</a></li>
+              <li>
+                <a>Company</a>
+                <ul class="p-2">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Infrastructure</a></li>
+                  <li><a href="#">Faq</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </li>
+              <li>
+                <a>Services</a>
+                <ul class="p-2">
+                  <li><a href="#">Web Crawling</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                  <li><a href="#">cCommerce Data Scraping</a></li>
+                  <li><a href="#">Python Web Scraping</a></li>
+                  <li><a href="#">Real Estate Web Scraping</a></li>
+                  <li><a href="#">Car Data Scraping</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Work</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Our Team</a></li>
+            </ul>
+          </div>
+          <div>
+            <a class="btn btn-ghost text-lg md:text-xl">
+              <img src="./assets/spider.png" class="w-8 h-8" alt="" />
+              <div class="hidden md:flex">
+                <h1 class="text-lg md:text-2xl font-extrabold">Web Scraping</h1>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal w-70 px-1">
+            <li><a>Home</a></li>
+            <li>
+              <details>
+                <summary>Company</summary>
+                <ul class="p-2">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Infrastructure</a></li>
+                  <li><a href="#">Faq</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                </ul>
+              </details>
+            </li>
+            <li>
+              <details>
+                <summary>Services</summary>
+                <ul class="p-2">
+                  <li><a href="#">Web Crawling</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                  <li><a href="#">cCommerce Data Scraping</a></li>
+                  <li><a href="#">Python Web Scraping</a></li>
+                  <li><a href="#">Website Scraping Service</a></li>
+                  <li><a href="#">Real Estate Web Scraping</a></li>
+                  <li><a href="#">Car Data Scraping</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button>
+            <a class="p-3 rounded-l-full bg-blue-500 text-white">Get A Quote</a>
+          </button>
+        </div>
+      </div>
+      <!-- nav ends here  -->
+
+      <!-- banner-->
+      <section class="w-10/12 mx-auto py-10">
+        <div>
+          <div class="flex gap-2">
+            <a href="index.html"
+              ><p><i class="bx bxs-home"></i></p
+            ></a>
+            <p><i class="bx bxs-chevron-right"></i></p>
+            <p>Enterprise Web Crawling Services</p>
+          </div>
+        </div>
+
+        <section class="flex-col md:flex-row flex items-center gap-5">
+          <div class="md:w-6/12 flex flex-col gap-6">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-blue-500">
+              Web Crawling Services <br />
+              Provider – Web Crawler <br />
+              Services
+            </h1>
+            <p>
+              With more than a decade of serving web crawling services globally,
+              we ensure that data is scraped and available publicly with great
+              accuracy and speed. Our team's expertise in using the ideal web
+              crawler API and tools to gather data and organize it for easy
+              analysis. We help our customers collect valuable insights using
+              ethical data crawling methods. Investing in data crawling services
+              will help you understand the marketplace, competitors, popular
+              solutions, opportunities, and market trends.
+            </p>
+            <a href="contact.html" target="_blank"
+              ><button class="w-36 h-8 btn btn-outline btn-primary">
+                Get Started Now
+              </button></a
+            >
+          </div>
+
+          <div class="md:w-6/12">
+            <img
+              src="./assets/enterprise_web.jpeg"
+              class="bg-blue-200 bg-opacity-20 w-full"
+              alt=""
+            />
+          </div>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <!-- overview section -->
+      <section class="w-10/12 mx-auto py-10">
+        <div class="flex md:flex-row flex-col justify-center gap-10 md:gap-20">
+          <div class="flex gap-4 justify-center items-center md:w-6/12">
+            <hr class="w-10 h-1 bg-black" />
+            <h1 class="text 3xl md:text-4xl font-bold">Overview</h1>
+          </div>
+          <div class="md:w-6/12">
+            <h1 class="text-3xl font-bold">
+              What Is Enterprise Crawling Service?
+            </h1>
+
+            <p class="md:w-9/12 justify-self-auto leading-6">
+              Enterprise web crawling solution is a pre-programmed technique
+              that helps you to gather publicly available data from websites.
+              Search engines like Bing, Google, and Yahoo use bots, spiders, and
+              web crawlers to scrape the Internet. It will collect data like
+              images, videos, and text to index the web pages. <br />
+              We prefer the latest technological advancements and tools to
+              handle your requirements at iWeb Scraping Services. Offering a
+              custom DaaS (Data as a Service) model, we define the crawlers
+              capable of extracting data from your target website. <br />
+              Whether your target platform is ecommerce, news, social networks,
+              forums, or job boards, we have a custom web crawler to deliver the
+              desired results. We also have robust anti-bot measures to avoid IP
+              blacklisting and ensure complete data extraction with accurate
+              results. <br />
+              With web crawler services, you can easily handle complicated
+              JavaScript, rate limitations, CAPTCHAs, and Ajax websites. Also,
+              be stress-free as we filter out invalid, duplicate, and outdated
+              information to ensure quality data analysis after crawling data
+              from a website.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- major industries -->
+      <section class="bg-[#F0F6FF] py-10">
+        <div class="w-8/12 mx-auto">
+          <div class="flex flex-col items-center justify-center">
+            <h1 class="md:text-3xl text-center font-bold mb-4">
+              Major Industries Investing In Enterprise Web Crawling Solutions
+            </h1>
+            <p class="md:text-lg 9/12 text-gray-400 mb-2">
+              <b>Financial Services:</b> It is effortless to gather real-time
+              data on stock prices, financial news, and market indicators to
+              strategize investments. This helps in risk management and in-depth
+              investment research with the bulk of data.
+            </p>
+
+            <p class="md:text-lg 9/12 text-gray-400 mb-2">
+              <b>Travel & Hospitality:</b> We can help you monitor flight,
+              hotel, and vacation package pricing for the best deals. With
+              custom web crawling solutions, you can also understand customer
+              sentiments and build effective marketing and operational
+              strategies.
+            </p>
+
+            <p class="md:text-lg 9/12 text-gray-400 mb-2">
+              <b>Real Estate:</b> Aggregating real estate listings from multiple
+              resources can provide buyers and sellers with numerous choices.
+              Both parties can easily monitor prices and availability in real
+              time to make the right choice.
+            </p>
+
+            <p class="md:text-lg 9/12 text-gray-400 mb-2">
+              <b>Pricing Intelligence:</b> Track competitor pricing, promotions,
+              and stock levels to optimize the strategies efficiently. This data
+              also helps to analyze market trends in discounts, pricing, and
+              products to adjust your strategy for better returns.
+            </p>
+
+            <p class="md:text-lg 9/12 text-gray-400 mb-2">
+              <b>Food & Delivery:</b> In the food industry, it is easier to
+              scrape menus, pricing, latest offers, and delivery details. With
+              an enterprise crawling service, you can track popular dishes,
+              faster delivery options, favorite restaurants, customer
+              preferences, and more to deliver a smooth experience.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- major industries -->
+
+      <!-- overview section -->
+    </main>
+  </body>
+</html>
